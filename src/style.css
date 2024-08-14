@@ -1,3 +1,58 @@
-h1, footer {
+body{
+    background-color: rgb(225, 207, 241);
+}
+
+hr {
+    border-style: groove;
+}
+
+.container {
+    background-color: white;
+    max-width: 600px;
+    padding: 15px 40px;
+    display: block;
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 35px;
+    box-shadow: 8px 8px 20px 30px rgba(0, 0, 255, .2);
+}
+.mainTitle, footer {
     text-align: center;
+    font-size: 22px;
+}
+
+.mainTitle {
+    font-size: 65px;
+}
+
+#city {
+display: block;
+margin: 0 auto;
+padding: 25px 200px;
+font-size: 25px;
+border: none;
+background-color: rgb(241, 233, 248);
+border-radius: 50px;
+}
+
+.cityLa, .citySydney, .cityTokyo {
+    font-size: 45px;
+    text-align: center;
+}
+
+.laTime, .sydneyTime, .tokyoTime {
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    left: 380px;
+    bottom: 35px;
+}
+
+.tokyoDate, .sydneyDate, .laDate {
+    font-size: 25px;
+    position: relative;
+    left: 50px;
+    top: 25px;
+    font-weight: 600;
 }
