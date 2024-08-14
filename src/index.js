@@ -1,56 +1,45 @@
-function displayLaDate() {
-let losAngelesData = document.querySelector("#los-Angeles-Date-Data");
-let losAngelesTimeData = moment().tz(`America_Los_Angeles`).format('MMMM Do YYYY');
-losAngelesData.innerHTML = losAngelesTimeData;
+function displayLaTimezone() {
+let losAngelesDateDataElement = document.querySelector("#los-Angeles-Date-Data");
+let losAngelesTimeDataElement = document.querySelector("#los-Angeles-Time-Data");
+let losAngelesTimeElement = moment();
+
+losAngelesDateDataElement.innerHTML = (losAngelesTimeElement.tz(`America_Los_Angeles`).format(`MMMM Do YYYY`));
+losAngelesTimeDataElement.innerHTML = (losAngelesTimeElement.tz(`America_Los_Angeles`).format(`h:mm:ss A`));
 }
 
+setInterval(displayLaTimezone);
 
-setInterval(displayLaDate);
 
-function displayLaTime() {
-let losAngelesData = document.querySelector("#los-Angeles-Time-Data");
-let losAngelesTimeData = moment().tz(`America_Los_Angeles`).format('h:MM:ss A');
-losAngelesData.innerHTML = losAngelesTimeData;
+
+
+function displaySydneyTimezone() {
+
+let SydneyDateDataElement = document.querySelector("#sydney-Date-Data");
+let SydneyTimeDataElement = document.querySelector("#sydney-Time-Data");
+
+let sydneyTimeElement = moment();
+
+SydneyDateDataElement.innerHTML  = (sydneyTimeElement.tz(`Australia/Sydney`).format('MMMM Do YYYY'));
+SydneyTimeDataElement.innerHTML = (sydneyTimeElement.tz(`Australia/Sydney`).format('h:mm:ss A'))
+
 }
 
-
-setInterval(displayLaTime);
-
-
-function displaySydneyDate() {
-let losAngelesData = document.querySelector("#sydney-Date-Data");
-let losAngelesTimeData = moment().tz(`Australia/Sydney`).format('MMMM Do YYYY');
-losAngelesData.innerHTML = losAngelesTimeData;
-}
+setInterval(displaySydneyTimezone);
 
 
-setInterval(displaySydneyDate);
 
-function displaySydneyTime() {
-let losAngelesData = document.querySelector("#sydney-Time-Data");
-let losAngelesTimeData = moment().tz(`Australia/Sydney`).format('h:MM:ss A');
-losAngelesData.innerHTML = losAngelesTimeData;
-}
+function displayTokyoTimezone() {
+let tokyoDateDataElement = document.querySelector("#tokyo-Date-Data");
+let tokyoTimeDataElement = document.querySelector("#tokyo-Time-Data");
 
+let tokyoTimeElement = moment();
 
-setInterval(displaySydneyTime);
-
-function displayTokyoDate() {
-let losAngelesData = document.querySelector("#tokyo-Date-Data");
-let losAngelesTimeData = moment().tz(`Asia/Tokyo`).format('MMMM Do YYYY');
-losAngelesData.innerHTML = losAngelesTimeData;
-}
+ tokyoDateDataElement.innerHTML  = (tokyoTimeElement.tz(`Asia/Tokyo`).format('MMMM Do YYYY'));
+ tokyoTimeDataElement.innerHTML = (tokyoTimeElement.tz(`Asia/Tokyo`).format('h:mm:ss A'));
+};
 
 
-setInterval(displayTokyoDate);
+setInterval(displayTokyoTimezone);
 
-function displayTokyoTime() {
-let losAngelesData = document.querySelector("#tokyo-Time-Data");
-let losAngelesTimeData = moment().tz(`Asia/Tokyo`).format('h:MM:ss A');
-losAngelesData.innerHTML = losAngelesTimeData;
-}
-
-
-setInterval(displayTokyoTime);
 
 
