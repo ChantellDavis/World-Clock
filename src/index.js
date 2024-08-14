@@ -7,8 +7,8 @@ losAngelesDateDataElement.innerHTML = (losAngelesTimeElement.tz(`America_Los_Ang
 losAngelesTimeDataElement.innerHTML = (losAngelesTimeElement.tz(`America_Los_Angeles`).format(`h:mm:ss A`));
 }
 
+displayLaTimezone();
 setInterval(displayLaTimezone);
-
 
 
 
@@ -23,7 +23,7 @@ SydneyDateDataElement.innerHTML  = (sydneyTimeElement.tz(`Australia/Sydney`).for
 SydneyTimeDataElement.innerHTML = (sydneyTimeElement.tz(`Australia/Sydney`).format('h:mm:ss A'))
 
 }
-
+displaySydneyTimezone(); 
 setInterval(displaySydneyTimezone);
 
 
@@ -38,7 +38,7 @@ let tokyoTimeElement = moment();
  tokyoTimeDataElement.innerHTML = (tokyoTimeElement.tz(`Asia/Tokyo`).format('h:mm:ss A'));
 };
 
-
+displayTokyoTimezone();
 setInterval(displayTokyoTimezone);
 
 
