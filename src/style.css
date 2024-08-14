@@ -9,7 +9,8 @@ hr {
 .container {
     background-color: white;
     max-width: 600px;
-    padding: 5px 40px;
+    padding: 20px 40px;
+    padding-bottom: 50px;
     display: block;
     border: none;
     margin: 0 auto;
@@ -19,17 +20,21 @@ hr {
 }
 .mainTitle, footer {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+footer {
+    padding-top: 20px;
 }
 
 .mainTitle {
-    font-size: 65px;
+    font-size: 60px;
 }
 
 #city {
 display: block;
 margin: 0 auto;
-padding: 15px 200px;
+padding: 15px 230px;
 font-size: 20px;
 border: none;
 background-color: rgb(241, 233, 248);
@@ -41,18 +46,20 @@ border-radius: 50px;
     text-align: center;
 }
 
-.laTime, .sydneyTime, .tokyoTime {
-    font-size: 20px;
+.losAngelesTimeData, .sydneyTimeData, .tokyoTimeData {
+    font-size: 30px;
     font-weight: 600;
     position: relative;
     left: 440px;
-    bottom: 28px;
+    top: -3px;
+    
 }
 
-.tokyoDate, .sydneyDate, .laDate {
-    font-size: 20px;
+.tokyoDateData, .sydneyDateData, .losAngelesDateData {
+    font-size: 19px;
     position: relative;
     left: 50px;
     top: 25px;
     font-weight: 600;
+    opacity: 55%;
 }

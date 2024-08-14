@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="/src/style.css" />
     <title>World Clock</title>
   </head>
@@ -17,18 +19,22 @@
           <option value="england">England</option>
         </select>
       </label>
-
-      <h2 class="cityLa">Los Angeles</h2>
-      <div class="laDate">Aug 12th 2024</div>
-      <h3 class="laTime">1:48:15 PM</h3>
+      
+        <h2 class="cityLa">Los Angeles</h2>
+        <div class="losAngelesDateData" id="los-Angeles-Date-Data">  
+          Aug 12th 2024</div>
+          <div class="losAngelesTimeData" id="los-Angeles-Time-Data">
+        1:48:15 PM
+      </div>
       <hr />
-      <h2 class="citySydney">Sydney</h2>
-      <div class="sydneyDate">Aug 12th 2024</div>
-      <h3 class="sydneyTime">1:48:15 PM</h3>
-      <hr />
-      <h2 class="cityTokyo">Tokyo</h2>
-      <div class="tokyoDate">Aug 12th 2024</div>
-      <h3 class="tokyoTime">1:48:15 PM</h3>
+        <h2 class="citySydney">Sydney</h2>
+        <div class="sydneyDateData" id="sydney-Date-Data">Aug 12th 2024 </div>
+      <div class="sydneyTimeData" id="sydney-Time-Data"> 1:48:15 PM</div>
+       <hr />
+        <h2 class="cityTokyo">Tokyo</h2>
+        <div class="tokyoDateData" id="tokyo-Date-Data">Aug 12th 2024 </div>
+        <div class="tokyoTimeData" id="tokyo-Time-Data">1:48:15 PM</div>
+      
       <hr />
       <footer>
         Project made by
@@ -38,7 +44,7 @@
           target="_blank"
           >Chantell Davis</a
         >
-        put on GitHub hosted my Netlify
+        put on GitHub hosted by Netlify
       </footer>
     </div>
     <script src="/src/index.js"></script>
