@@ -17,11 +17,13 @@ let tokyoTimeDataElement = document.querySelector("#tokyo-Time-Data");
 
 tokyoDateDataElement.innerHTML  = (TimeElement.tz(`Asia/Tokyo`).format('MMMM Do YYYY'));
 tokyoTimeDataElement.innerHTML = (TimeElement.tz(`Asia/Tokyo`).format('h:mm:ss [<small>]A[</small>]'));
-
 };
 
 function updateCityTimeDateData(event) {
     let cityTimeZone = (event.target.value);
+    if (cityTimeZone === "current") {
+         cityTimeZone = moment.tz.guess();
+    }
     let cityName = cityTimeZone.replace("_", " ").split(`/`)[1];
 let cityTime = moment().tz(cityTimeZone);
 let citiesElement = document.querySelector("#cities");
