@@ -33,7 +33,8 @@ citiesElement.innerHTML = ` <h2 class="cityLa">${cityName}</h2>
           </div>
           <div class="losAngelesTimeData">
           ${cityTime.format('h:mm:ss [<small>]A[</small>]')}
-        </div> `;
+        </div>
+        <div class="allCitiesLink"><a href="/">All Cities</a></div> `;
 }
 
 displayTimezone();

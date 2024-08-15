@@ -41,6 +41,7 @@ font-size: 20px;
 border: none;
 background-color: rgb(241, 233, 248);
 border-radius: 50px;
+
 }
 
 .cityLa, .citySydney, .cityTokyo {
@@ -64,4 +65,12 @@ border-radius: 50px;
     top: 25px;
     font-weight: 600;
     opacity: 55%;
+}
+
+.allCitiesLink {
+    text-align: center;
+    font-size: 20px;
+
+    font-weight: 800;
+    
 }
